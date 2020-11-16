@@ -1,7 +1,10 @@
+/!\ Fork from ERC-20 Token Test Suite (token-test-suite)
+Original npm package : https://www.npmjs.com/package/token-test-suite
+Latest previous fork on Github : https://github.com/mancze/token-test-suite
+Original authors : CryptoverseRocks, mancze, Michal Novák 
+
 ERC-20 Token Test Suite
 =======================
-
-[![Build Status](https://travis-ci.org/CryptoverseRocks/token-test-suite.svg)](https://travis-ci.org/CryptoverseRocks/token-test-suite)
 
 Package to test your ERC-20 token implementation from your truffle projects.
 
@@ -12,7 +15,7 @@ Installation
 ------------
 
 ```shell
-npm install --save-dev token-test-suite
+npm install --save-dev erc20-test-suite
 ```
 
 Getting Started
