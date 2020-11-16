@@ -1,12 +1,12 @@
 {
 	"name": "erc20-test-suite",
-	"description": "ERC-20 Token Test Suite. Fork of npm package token-test-suite.",
+	"description": "ERC-20 Token Test Suite (Fork of npm package token-test-suite)",
 	"author": "Neozaru",
 	"contributors": [
 		"Michal Novák (https://www.weborama.cz/) - ORIGINAL AUTHOR",
 		"Neozaru (from Nov 2020)"
 	],
-	"version": "0.1.1",
+	"version": "0.2.0",
 	"license": "MIT",
 	"main": "lib/suite.js",
 	"repository": "github:neozaru/erc20-test-suite",
