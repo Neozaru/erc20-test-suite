@@ -370,8 +370,10 @@ module.exports = function (options) {
 		describe('transferFrom(_from, _to, _value)', function () {
 			describeIt(when('_from != _to and _to != sender'), alice, bob, charles)
 			describeIt(when('_from != _to and _to == sender'), alice, bob, bob)
-			describeIt(when('_from == _to and _to != sender'), alice, alice, bob)
-			describeIt(when('_from == _to and _to == sender'), alice, alice, alice)
+			if (options.allowanceSendToSelf) {
+				describeIt(when('_from == _to and _to != sender'), alice, alice, bob)
+				describeIt(when('_from == _to and _to == sender'), alice, alice, alice)
+			}
 
 			it('should revert when trying to transfer while not allowed at all', async function () {
 				await credit(alice, tokens(3))
